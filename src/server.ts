@@ -6,7 +6,7 @@ const port = 5000;
 async function DtabaseConnect() {
   try {
     await mongoose.connect(
-      "mongodb+srv://CodeWithMongoose:7TIlqnrJc1hAL8Pd@cluster0.hn6ma.mongodb.net/"
+      "mongodb+srv://CodeWithMongoose:7TIlqnrJc1hAL8Pd@cluster0.hn6ma.mongodb.net/Typescript?retryWrites=true&w=majority"
     );
     app.listen(port, () => {
       console.log(`Server is listening on port ${port}`);
